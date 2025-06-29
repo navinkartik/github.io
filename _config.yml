@@ -3,7 +3,7 @@ email: "nk2339@columbia.edu"
 description: >- 
   Personal academic homepage for Navin Kartik, economist.
 baseurl: ""
-url: "https://nkartik.github.io"
+url: "https://navinkartik.github.io"
 theme: minima
 
 markdown: kramdown

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PhD Students – Navin Kartik</title>
+  <link rel="stylesheet" href="mystyles.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Georgia, serif;
+    }
+    .navlinks {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .navlinks a {
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .students-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+    }
+    .students-table th,
+    .students-table td {
+      padding: 6px 12px;
+      text-align: left;
+    }
+    .students-table th {
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .students-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .footer {
+      text-align: center;
+      font-size: 10pt;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navlinks">
+    <font size="+2"><a href="index.html">Home</a></font>
+  </div>
+
+  <center>
+    <h1>PhD Students Advised by Navin Kartik</h1>
+    <p><i>(as primary or co-primary advisor; ordered alphabetically)</i></p>
+  </center>
+
+  <table class="students-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Name</th>
+        <th onclick="sortTable(1)">Year</th>
+        <th onclick="sortTable(2)">First Placement</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><a href="https://cesarbarilla.com">César Barilla</a></td><td data-sort="2025">2025</td><td>Oxford postdoc</td></tr>
+      <tr><td><a href="https://sites.google.com/view/ambuj-dewan/home?authuser=0">Ambuj Dewan</a></td><td data-sort="2017">2017</td><td>USC postdoc / Statistics Canada</td></tr>
+      <tr><td><a href="https://www.albuquerquefurtado.com/">Bruno Furtado</a></td><td data-sort="2023">2023</td><td>Royal Holloway postdoc</td></tr>
+      <tr><td><a href="https://sites.google.com/site/takasweb/home?authuser=0">Takakazu Honryo</a></td><td data-sort="2012">2012</td><td>University of Mannheim / Doshisha University</td></tr>
+      <tr><td><a href="https://www.columbia.edu/~ak2912/">Andrew Kosenko</a></td><td data-sort="2018">2018</td><td>Marist College</td></tr>
+      <tr><td><a href="https://sites.google.com/view/tianhaoliuecon">Tianhao Liu</a></td><td data-sort="2026">2026 (in progress)</td><td>—</td></tr>
+      <tr><td><a href="https://it.linkedin.com/in/uliana-loginova-569a614">Uliana Loginova</a></td><td data-sort="2012">2012</td><td>McKinsey Consulting</td></tr>
+      <tr><td><a href="https://www.beatrice-michaeli.com">Beatrice Michaeli</a></td><td data-sort="2014">2014</td><td>UCLA Accounting</td></tr>
+      <tr><td><a href="https://web.stanford.edu/~perssonp/">Petra Persson</a></td><td data-sort="2013">2013</td><td>Stanford University</td></tr>
+      <tr><td><a href="http://www.danielrappoport.com/">Daniel Rappoport</a></td><td data-sort="2018">2018</td><td>Chicago Booth / Georgetown University</td></tr>
+      <tr><td><a href="https://sites.google.com/view/dilip-ravindran/home">Dilip Ravindran</a></td><td data-sort="2021">2021</td><td>Humboldt University of Berlin postdoc</td></tr>
+      <tr><td><a href="https://www.sshahanaghi.com/">Sara Shahanagi</a></td><td data-sort="2022">2022</td><td>Toulouse School of Economics</td></tr>
+      <tr><td><a href="https://sites.google.com/view/teckyongtan/">Teck Yong Tan</a></td><td data-sort="2017">2017</td><td>Nanyang University / University of Rochester</td></tr>
+      <tr><td><a href="https://www.analysisgroup.com/people/vice-presidents/enrico-zanardo/">Enrico Zanardo</a></td><td data-sort="2017">2017</td><td>Analysis Group Consulting</td></tr>
+      <tr><td><a href="https://wjzhong.com">Weijie Zhong</a></td><td data-sort="2019">2019</td><td>Stanford GSB</td></tr>
+      <tr><td><a href="">Yangfan Zhou</a></td><td data-sort="2026">2026 (in progress)</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <p class="footer">July 2025</p>
+
+  <script>
+  function sortTable(colIndex) {
+    const table = document.querySelector(".students-table");
+    const tbody = table.tBodies[0];
+    const rows = Array.from(tbody.rows);
+
+    const sorted = rows.sort((a, b) => {
+      let x = a.cells[colIndex].getAttribute('data-sort') || a.cells[colIndex].innerText.trim();
+      let y = b.cells[colIndex].getAttribute('data-sort') || b.cells[colIndex].innerText.trim();
+
+      // Try to sort numerically if possible
+      const xNum = parseInt(x, 10);
+      const yNum = parseInt(y, 10);
+      if (!isNaN(xNum) && !isNaN(yNum)) {
+        return xNum - yNum;
+      }
+
+      return x.localeCompare(y);
+    });
+
+    for (const row of sorted) {
+      tbody.appendChild(row);
+    }
+  }
+  </script>
+
+</body>
+</html>

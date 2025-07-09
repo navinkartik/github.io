@@ -1,7 +1,19 @@
-A:link		{color: mediumblue; text-decoration:none}
-A:visited {color: mediumblue; text-decoration:none}
-A:hover	{color: #FF0000; text-decoration:none};
-A:active	{color: #0000e0; text-decoration:none}
+:root {
+  --yale-blue: #00356B;
+  --coauthor-green: #466B4F;
+  --hover-color: #c22e2e;
+  --slide-purple: #781496;
+  --slide-purple-muted: #9470aa;
+  --note-blue: #3c56bb;
+  --text-muted: #555;
+  --journal-red: #752525;
+  --link-blue: #1d32c0;
+}
+
+A:link,
+A:visited {color: var(--link-blue); text-decoration:none}
+A:hover,
+A:active {color: var(--hover-color); text-decoration:none};
 
 P.menuitem-on		{color: maroon; font-family: monospace; font-size: 14pt; font-weight: bold; text-decoration: none   }
 P.menuitem-off	{color: gray; font-family: monospace; font-size: 14pt; font-weight: bold; text-decoration: none }
@@ -11,34 +23,138 @@ h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 
 
 A.yalelink:link,
 A.yalelink:visited {
-  color: #00356B;
+  color: var(--yale-blue);
   text-decoration: none;
 }
 A.yalelink:hover {
-  color: #FF0000;
+  color: var(--hover-color);
   text-decoration: none;
 }
 
-A.papertitle:link {  }
-A.papertitle:visited {  }
-A.papertitle:hover	{ color: #ff0000; text-decoration:none }
+A.papertitle:link,
+A.papertitle:visited {  color: var(--link-blue);  }
+A.papertitle:hover	{ color: var(--hover-color); text-decoration:none }
 
-A.slidestitle:link { color: #781496; }
-A.slidestitle:visited { color: #781496; }
+A.slidestitle:link { color: var(--slide-purple); }
+A.slidestitle:visited { color: var(--slide-purple); }
 A.slidestitle:hover	{ color: #ff0000; text-decoration:none }
 
 
-A.coauthor:link { color: #267347; }
-A.coauthor:visited { color: #267347; }
-A.coauthor:hover	{ color: #ff0000; text-decoration:none }
 
-A.journal:link { color: #8e2525}
-A.journal:visited { font-style: normal; color: #8e2525}
-A.journal:hover	{ color: #ff0000; text-decoration:none }
+A.coauthor:link,
+A.coauthor:visited {
+  color: var(--coauthor-green);
+  text-decoration: none;
+}
+A.coauthor:hover {
+  color: var(--hover-color);
+}
 
-A.headeron:link { color: maroon; font-family: monospace; font-size: 14pt; font-weight: bold; text-decoration: none }
-A.headeron:visited { color: maroon; font-family: monospace; font-size: 14pt; font-weight: bold; text-decoration: none }
-A.headeron:hover	{ color: red; text-decoration:none }
+A.journal:link,
+A.journal:visited { font-style: normal; color: var(--journal-red)}
+A.journal:hover	{ color: var(--hover-color); text-decoration:none }
 
-A.headeroff:link { color: green; }
-A.headeroff:hover	{ color: #ff0000; text-decoration:none }
+
+.journal-and-links {
+  margin-top: 0.3em;
+}
+
+.paper-links-inline {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.paper-links-inline a {
+  color: var(--slide-purple);
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+  padding: 1px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 0.25rem;
+}
+
+.paper-links-inline a:hover {
+  color: var(--hover-color);
+}
+
+.paper-links-inline a:first-child {
+  margin-left: 0;
+}
+
+
+.paper-notes {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  margin-top: 0.4em;
+  margin-left: 1em;
+  font-size: 0.95em;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+.paper-notes::before {
+  content: "\00B7";  /* middle dot · */;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  font-size: 1.25em;
+}
+
+.paper-notes a:link,
+.paper-notes a:visited {
+  color: var(--note-blue);
+}
+.paper-notes a:hover {
+  color: var(--hover-color);
+}
+
+.paper-notes a.coauthor:link,
+.paper-notes a.coauthor:visited {
+  color: var(--coauthor-green);
+}
+.paper-notes a.coauthor:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.paper-notes a.slidestitle:link,
+.paper-notes a.slidestitle:visited {
+  color: var(--slide-purple);
+}
+.paper-notes a.slidestitle:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+
+.nav-links {
+  padding-top: 0;
+  margin-top: -5px;
+  font-size: 1.1em;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav-links a:first-child {
+  margin-left: 0;
+}
+
+.nav-links a:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: var(--link-blue);
+  text-decoration: none;
+  margin-right: 1.2em;
+  padding: 2px 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}

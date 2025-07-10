@@ -290,7 +290,7 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
 
   .paper-links-inline a {
     padding: 8px 12px;      /* more height & side room */
-    font-size: 1em;         /* optional: bump font a bit */
+    font-size: 15em;         /* optional: bump font a bit */
     min-width: 48px;        /* ensures minimum tap area */
     display: inline-block;  /* allows padding/min-width to work */
     text-align: center;

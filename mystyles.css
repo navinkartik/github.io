@@ -262,9 +262,20 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     min-width: 110px;
     text-align: center;
     margin: 0;
+    background: #f3f7fb;
     padding: 7px 10px;
     border-radius: 4px;
     font-size: 1em;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:active {
+  color: var(--hover-color);
+  }
+
+  .nav-links a:focus {
+  outline: 2px solid #aac; /* optional accessibility outline */
+  color: var(--link-blue);  /* don't keep the hover color */
   }
 
   .papertitle {

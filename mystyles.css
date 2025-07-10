@@ -289,7 +289,12 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   }
 
   .paper-links-inline a {
-    margin-bottom: 0.3em;
+    padding: 8px 12px;      /* more height & side room */
+    font-size: 1em;         /* optional: bump font a bit */
+    min-width: 48px;        /* ensures minimum tap area */
+    display: inline-block;  /* allows padding/min-width to work */
+    text-align: center;
+    margin-bottom: 0.4em;   /* space between badges if they wrap */
   }
 
   .coauthor-next-line {

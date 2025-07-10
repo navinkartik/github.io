@@ -87,6 +87,11 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   margin-top: 0.3em;
 }
 
+.papers li {
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
 .paper-links-inline {
   display: inline-flex;
   gap: 0.5rem;

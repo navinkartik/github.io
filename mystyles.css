@@ -21,6 +21,13 @@ P.title			{color=#800040; font-size: 18pt; text-align: center}
 P.footer			{color=#000000; font-size: 8pt; text-align: center}
 h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 0.83em 0; }
 
+.headshot {
+  height: 202px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  display: block;
+}
+
 a.yalelink {
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -172,4 +179,61 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
 .coauthor-next-line {
   margin-top: .3em; 
 /*  margin-left: 10px; */
+}
+
+
+/* Mobile-specific enhancements */
+@media (max-width: 700px) {
+  body {
+    padding: 0 1.2em;
+  }
+
+  .address-block {
+    display: none;
+  }
+
+  .headshot {
+    max-height: 160px;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  table, td {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .header-row > td,
+  .nav-links {
+    margin-top: 1em;
+  }
+
+  .header-right img {
+    margin-top: 10px;
+    max-height: 180px;
+  }
+
+  .nav-links {
+    font-size: 1em;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    font-size: 1em;
+    padding: 6px 10px;
+    margin: 0.25em 0.4em;
+  }
+
+  .papertitle {
+    font-size: 1.05em;
+  }
+
+  .paper-links-inline {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .paper-links-inline a {
+    margin-bottom: 0.3em;
+  }
 }

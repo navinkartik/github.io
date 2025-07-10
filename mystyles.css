@@ -63,6 +63,9 @@ A.yalelink:hover {
   text-decoration: none;
 }
 
+.short-name { display: none; }
+.long-name { display: inline; }
+
 A.papertitle:link,
 A.papertitle:visited {  color: var(--link-blue);  }
 A.papertitle:hover	{ color: var(--hover-color); text-decoration:none }
@@ -245,6 +248,9 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     margin-top: 10px;
     max-height: 180px;
   }
+
+  .short-name { display: inline; }
+  .long-name { display: none; }
 
   .nav-links {
     display: flex;

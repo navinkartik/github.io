@@ -22,8 +22,8 @@ P.footer			{color=#000000; font-size: 8pt; text-align: center}
 h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 0.83em 0; }
 
 /* Default: hide mobile photo, show desktop */
-.mobile-profile-pic { display: none; }
-.desktop-profile-pic { display: block; }
+.mobile-pic { display: none; }
+.desktop-pic { display: block; }
 
 .headshot {
   height: 202px;

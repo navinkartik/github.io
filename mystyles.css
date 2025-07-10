@@ -213,6 +213,10 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     padding: 0 1.2em;
   }
 
+ h1 {
+    font-size: 1.5em;
+  }
+
   .name-header {
     font-size: 1.6em;
   }

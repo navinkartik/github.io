@@ -228,8 +228,8 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     margin-top: 10px;
   }
   
-  .mobile-profile-pic { display: block; margin: 0 auto 1em auto; max-width: 160px; border-radius: 6px; }
-  .desktop-profile-pic { display: none; }
+  .mobile-pic { display: block; margin: 0 auto 1em auto; max-width: 160px; border-radius: 6px; }
+  .desktop-pic { display: none; }
 
   table, td {
     width: 100% !important;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta>
+  <meta charset="utf-8">
   <title>Navin Kartik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mystyles.css" type="text/css">
@@ -74,6 +74,10 @@
 					        Address: Yale Economics Department, P.O. Box 208268, New Haven, CT 06520-8268 (USA)</p>
 </div>
 					      <br>
+	<!-- Mobile-only photo -->
+	<img src="Images/nk_head_current.jpg" alt="Navin Kartik photo" class="headshot mobile-pic">
+
+
       <!-- Navigation Links -->
 	<div class="nav-links">
 	  <a href="CV/bio_academic.pdf">Bio</a>
@@ -87,7 +91,7 @@
 
           <!-- Right: Headshot -->
           <td valign="top" width="200">
-            <img src="Images/nk_head_current.jpg" alt="Navin Kartik photo"  class="headshot">
+            <img src="Images/nk_head_current.jpg" alt="Navin Kartik photo"  class="headshot desktop-pic">
           </td>
         </tr>
       </table>
@@ -104,7 +108,7 @@
 -->
 
 
-<h2>Unpublished Papers</h2>
+<h2  class="papers-header">Unpublished Papers</h2>
 <ul class="papers">
   <li>Replacement and Reputation, with <a class="coauthor" href="https://elliotlipnowski.com">Elliot Lipnowski</a> and <a class="coauthor" href="https://sites.northwestern.edu/harrypei/">Harry Pei</a>, coming soon <span class="paper-links-inline"><a href="Slides/KLP-Replacement-slides.pdf">Slides</a></span></li>
 
@@ -130,7 +134,7 @@
 </ul>
 
 
-<h2>Published and Forthcoming Papers</h2>
+<h2 class="papers-header">Published and Forthcoming Papers</h2>
 <ol reversed class="papers">
 
   <li><a class="papertitle" href="Papers/DFK-TestOptional.pdf">Test-Optional Admissions</a>, with <a class="coauthor" href="http://www0.gsb.columbia.edu/faculty/wdessein/">Wouter Dessein</a> and <a class="coauthor" href="https://faculty.chicagobooth.edu/alexander-frankel">Alex Frankel</a>
@@ -557,7 +561,7 @@
 <script>
   if (window.innerWidth <= 700) {
     document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("h2, ul.papers, ol.papers").forEach(el => el.style.display = "none");
+      document.querySelectorAll("h2.papers-header, ul.papers, ol.papers").forEach(el => el.style.display = "none");
 
       const nav = document.querySelector(".nav-links");
       if (nav) {

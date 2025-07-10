@@ -21,6 +21,10 @@ P.title			{color=#800040; font-size: 18pt; text-align: center}
 P.footer			{color=#000000; font-size: 8pt; text-align: center}
 h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 0.83em 0; }
 
+/* Default: hide mobile photo, show desktop */
+.mobile-profile-pic { display: none; }
+.desktop-profile-pic { display: block; }
+
 .headshot {
   height: 202px;
   border: 1px solid #000;
@@ -223,6 +227,9 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     width: auto;
     margin-top: 10px;
   }
+  
+  .mobile-profile-pic { display: block; margin: 0 auto 1em auto; max-width: 160px; border-radius: 6px; }
+  .desktop-profile-pic { display: none; }
 
   table, td {
     width: 100% !important;
@@ -240,14 +247,24 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   }
 
   .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 1em;
+    gap: 0.7em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
   }
 
   .nav-links a {
     display: inline-block;
+    min-width: 110px;
+    text-align: center;
+    margin: 0;
+    padding: 7px 10px;
+    border-radius: 4px;
     font-size: 1em;
-    padding: 6px 10px;
-    margin: 0.25em 0.4em;
   }
 
   .papertitle {
@@ -269,3 +286,6 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     margin-top: 0.3em;
   }
 }
+
+
+

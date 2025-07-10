@@ -2,7 +2,7 @@
   --yale-blue: #00356B;
   --coauthor-green: #39734f;
   --hover-color: #c22e2e;
-  --slide-purple: #781496;
+  --slide-purple: #8849a3;
   --slide-purple-muted: #9470aa;
   --note-blue: #3c56bb;
   --text-muted: #555;
@@ -21,11 +21,19 @@ P.title			{color=#800040; font-size: 18pt; text-align: center}
 P.footer			{color=#000000; font-size: 8pt; text-align: center}
 h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 0.83em 0; }
 
+a.yalelink {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+/*  border-bottom: .5px dotted #ccc;
+  padding-bottom: 1px; */
+}
+
 A.yalelink:link,
 A.yalelink:visited {
   color: var(--yale-blue);
   text-decoration: none;
 }
+
 A.yalelink:hover {
   color: var(--hover-color);
   text-decoration: none;
@@ -66,13 +74,13 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
 }
 
 .paper-links-inline a {
+  background-color: #f4f4f4;
   color: var(--slide-purple);
-  border: 1px solid #ddd;
-  font-size: 0.9rem;
-  padding: 1px 4px;
+  padding: 1px 3px;
+  border: none;
   border-radius: 4px;
+  font-size: 0.85em;
   text-decoration: none;
-  margin-left: 0.25rem;
 }
 
 .paper-links-inline a:hover {
@@ -132,9 +140,19 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
 .nav-links {
   padding-top: 0;
   margin-top: -5px;
-  font-size: 1.1em;
+  font-size: 1.15em;
   margin-left: 0;
   padding-left: 0;
+}
+
+.nav-links a {
+  color: var(--link-blue);
+  text-decoration: none;
+  margin-right: 1.2em;
+  padding: 2px 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+/*  background-color: #f5f5f5; */
 }
 
 .nav-links a:first-child {
@@ -145,16 +163,13 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   margin-right: 0;
 }
 
-.nav-links a {
-  color: var(--link-blue);
-  text-decoration: none;
-  margin-right: 1.2em;
-  padding: 2px 6px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
 .nav-links a:hover {
+/*  background-color: #e6ecf8; */
   color: var(--hover-color);
   text-decoration: none;
+}
+
+.coauthor-next-line {
+  margin-top: .3em; 
+/*  margin-left: 10px; */
 }

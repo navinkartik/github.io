@@ -295,11 +295,11 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   }
 
   .paper-links-inline a {
-    display: inline-block;    /* Ensures full clickable area */
-    padding: 3px 5px;        /* Generous tap target */
+    display: inline-block;
+    padding: 3px 5px;        
     font-size: .95em;
-    min-width: 36px;
-    margin-bottom: 0.4em;
+    min-width: 48px;
+    /* margin-bottom: 0.3em; */
     border-radius: 4px;
     text-align: center;
   }

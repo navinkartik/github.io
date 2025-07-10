@@ -255,6 +255,7 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   }
 
   .paper-links-inline {
+    font-size: .95em;
     flex-wrap: wrap;
     gap: 0.4rem;
   }

@@ -257,7 +257,7 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     margin-top: 0.1em;
     white-space: nowrap;  }
 
-  .omit-on-mobile {
+  .only-mobile {
     display: inline;
   }
 

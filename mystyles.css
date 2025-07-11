@@ -19,7 +19,16 @@ P.menuitem-on		{color: maroon; font-family: monospace; font-size: 14pt; font-wei
 P.menuitem-off	{color: gray; font-family: monospace; font-size: 14pt; font-weight: bold; text-decoration: none }
 P.title			{color=#800040; font-size: 18pt; text-align: center}
 P.footer			{color=#000000; font-size: 8pt; text-align: center}
-h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 0.83em 0; }
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.83em 0;
+  letter-spacing: 0.5px;
+}
 
 .headshot {
   height: 202px;

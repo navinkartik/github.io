@@ -215,11 +215,11 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   }
 
   .name-header {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 
   .title-header {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
 
   .address-block {

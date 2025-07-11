@@ -32,6 +32,8 @@ h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 
 .mobile-pic { display: none; }
 .desktop-pic { display: block; }
 
+.only-mobile{ display: none; }
+
 .name-header {
   font-family: Georgia, serif;
   font-size: 2.2em;
@@ -256,8 +258,13 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     white-space: nowrap;  }
 
   .omit-on-mobile {
+    display: inline;
+  }
+
+  .omit-on-mobile {
     display: none;
   }
+
 
   .nav-links {
     display: flex;

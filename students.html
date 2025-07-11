@@ -11,15 +11,6 @@
     body {
       font-family: Georgia, serif;
     }
-    .navlinks {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-    .navlinks a {
-      margin: 0 15px;
-      text-decoration: none;
-    }
     .students-table {
       border-collapse: collapse;
       width: 100%;
@@ -36,8 +27,12 @@
       font-size: 16px;
       cursor: pointer;
     }
+    .students-table th:active,
     .students-table th:hover {
-      text-decoration: underline;
+      /* background-color: #f9f9f9;;    */
+      text-decoration: none;
+      /* box-shadow: 0 2px 0 #00356B; */
+        color: var(--yale-blue);
     }
     .students-table tr:nth-child(even) {
       background-color: #f9f9f9;

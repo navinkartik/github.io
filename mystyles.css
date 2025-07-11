@@ -33,6 +33,7 @@ h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 
 .desktop-pic { display: block; }
 
 .only-mobile{ display: none; }
+.nav-only-mobile{ display: none; }
 
 .name-header {
   font-family: Georgia, serif;

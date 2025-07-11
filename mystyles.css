@@ -257,6 +257,10 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     margin-top: 0.1em;
     white-space: nowrap;  }
 
+  .nav-only-mobile {
+    display: block;
+  }
+
   .only-mobile {
     display: inline;
   }

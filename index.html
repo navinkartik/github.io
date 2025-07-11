@@ -570,15 +570,6 @@
   if (window.innerWidth <= 700) {
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("h2.papers-header, h2.teaching, ul.papers, ol.papers").forEach(el => el.style.display = "none");
-
-      const nav = document.querySelector(".nav-links");
-      if (nav) {
-        nav.innerHTML += `
-          <a href="unpublished.html">Unpublished Papers</a>
-          <a href="published.html">Published Papers</a>
-          <a href="teaching.html">Teaching</a>
-        `;
-      }
     });
   }
 </script>

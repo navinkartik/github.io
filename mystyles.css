@@ -46,10 +46,10 @@ h2 { font-size: 1.2em; font-variant: small-caps; text-decoration: none; margin: 
 }
 
 a.yalelink {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   border-radius: 4px;
-/*  border-bottom: .5px dotted #ccc;
-  padding-bottom: 1px; */
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 1px;
 }
 
 A.yalelink:link,
@@ -62,9 +62,6 @@ A.yalelink:hover {
   color: var(--hover-color);
   text-decoration: none;
 }
-
-.short-name { display: none; }
-.long-name { display: inline; }
 
 A.papertitle:link,
 A.papertitle:visited {  color: var(--link-blue);  }
@@ -253,8 +250,14 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
     max-height: 180px;
   }
 
-  .short-name { display: inline; }
-  .long-name { display: none; }
+  .yale-univ-link {
+    display: block;
+    margin-top: 0.1em;
+  }
+
+  .email-label {
+    display: none;
+  }
 
   .nav-links {
     display: flex;

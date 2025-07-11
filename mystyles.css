@@ -251,9 +251,9 @@ A.journal:hover	{ color: var(--hover-color); text-decoration:none }
   }
 
   .yale-univ-link {
-    display: block;
+    display: inline-block;
     margin-top: 0.1em;
-  }
+    white-space: nowrap;  }
 
   .email-label {
     display: none;
